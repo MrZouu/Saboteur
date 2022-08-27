@@ -63,6 +63,6 @@ the gold is shared, everyone reveals their role.
 * Use the keyboard to enter players' names
 
 #  Credits
-* [**MrZouu**](https://github.com/MrZouu) : Co-creator of the project.
+* [**MrZouu**](https://github.com/MrZouu) : Co-creator of the project. 
 * **Léo La Fornara** : Co-creator of the project.
 * **Lancelot de Montfort** : Co-creator of the project.
