@@ -4,6 +4,8 @@ Saboteur card game with graphic interface
 ![Language](https://img.shields.io/badge/Language-C-b0b0b0)
 ![Language](https://img.shields.io/badge/Allegro-02A9FF?style=logo=Allegro&logoColor=white)
 
+***Project date : 2021***
+
 ##  Description
 You are either a gold digger or a saboteur. If the gold diggers manage to find their way to the
 their way to the treasure, they will win gold nuggets
