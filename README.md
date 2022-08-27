@@ -43,6 +43,7 @@ the gold is shared, everyone reveals their role.
 ## Game
 * Choose the number of players ( 2-4 )
 * Naming players
+* Press space when changing players
 * Drag and drop
 * Victory menu for saboteur and gold digger
 
