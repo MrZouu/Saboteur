@@ -1,5 +1,5 @@
 # Saboteur
-Saboteur card game with graphical interface
+Saboteur card game with graphic interface
 
 ![Language](https://img.shields.io/badge/Language-C-b0b0b0)
 ![Language](https://img.shields.io/badge/Allegro-02A9FF?style=logo=Allegro&logoColor=white)
