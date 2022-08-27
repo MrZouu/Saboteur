@@ -33,12 +33,22 @@ the gold is shared, everyone reveals their role.
 
 # Features
 ## Main Menu
+*The menu is a graphical interface with
+   * **Nouvelle Partie** - New Game
+   * **Partie Sauvegarde** - Save (Not functional)
+   * **Scores joueurs** - Score of registered players
+   * **Aide** - Game rules
+   * **Quitter le jeu** - Leave
 
 ## Game
+* Choose the number of players ( 2-4 )
+* Naming players
+* Drag and drop
+* Victory menu for saboteur and gold digger
 
 ##  User guide
-* Interactions are on the console
-  
+* Interactions with the mouse
+* Use the keyboard to enter players' names
 
 #  Credits
 * [**MrZouu**](https://github.com/MrZouu) : Co-creator of the project.
