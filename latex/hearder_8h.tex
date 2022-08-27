@@ -1,0 +1,982 @@
+\hypertarget{hearder_8h}{}\doxysection{hearder.\+h File Reference}
+\label{hearder_8h}\index{hearder.h@{hearder.h}}
+{\ttfamily \#include $<$allegro.\+h$>$}\newline
+{\ttfamily \#include $<$winalleg.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$dirent.\+h$>$}\newline
+Include dependency graph for hearder.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpaquet_carte}{paquet\+Carte}}
+\item 
+struct \mbox{\hyperlink{structjoueur}{joueur}}
+\item 
+struct \mbox{\hyperlink{structpile}{pile}}
+\item 
+struct \mbox{\hyperlink{structbitmap_carte}{bitmap\+Carte}}
+\item 
+struct \mbox{\hyperlink{structjeu}{jeu}}
+\item 
+struct \mbox{\hyperlink{structchercheur}{chercheur}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{hearder_8h_aed89bd71aee8be823e8a20ec4e093c1e}{H\+E\+I\+G\+HT}}~800
+\item 
+\#define \mbox{\hyperlink{hearder_8h_a241aeeb764887ae5e3de58b98f04b16d}{W\+I\+D\+TH}}~800
+\item 
+\#define \mbox{\hyperlink{hearder_8h_abfc67b7c2f48108fa012704b551ebaf4}{N\+B\+IM}}~26
+\item 
+\#define \mbox{\hyperlink{hearder_8h_a28451d116a25a09ca07c8fbf7a773668}{S\+A\+B\+O\+T\+E\+U\+R\+\_\+\+W\+IN}}~-\/1
+\item 
+\#define \mbox{\hyperlink{hearder_8h_a0fc39317ea8cd646ad27e9b8a3baeb65}{F\+I\+N\+T\+O\+UR}}~1
+\item 
+\#define \mbox{\hyperlink{hearder_8h_ad315013ae6029fdddc926e3e4167db5d}{P\+I\+O\+C\+H\+ER}}~2
+\item 
+\#define \mbox{\hyperlink{hearder_8h_a3de3df5e22d841accc858be9a75a9861}{C\+H\+E\+R\+C\+H\+E\+U\+R\+\_\+\+W\+I\+N1}}~3
+\item 
+\#define \mbox{\hyperlink{hearder_8h_a17ad0271b3c352e3e6181b14a95275c7}{C\+H\+E\+R\+C\+H\+E\+U\+R\+\_\+\+W\+I\+N2}}~4
+\item 
+\#define \mbox{\hyperlink{hearder_8h_a36a33a6b4026d1027747e3329e911b9a}{C\+H\+E\+R\+C\+H\+E\+U\+R\+\_\+\+W\+I\+N3}}~5
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structpaquet_carte}{paquet\+Carte}} \mbox{\hyperlink{hearder_8h_a407a681d9a08644602b7600f44cf2b43}{paquet\+Carte\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structjoueur}{joueur}} \mbox{\hyperlink{hearder_8h_a19e1fe8cca015084cc5d40daf64813c0}{joueur\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structpile}{pile}} \mbox{\hyperlink{hearder_8h_afd9d18de428357be6d7dfff26b288a73}{pile\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structbitmap_carte}{bitmap\+Carte}} \mbox{\hyperlink{hearder_8h_a181159d918148214345654707ac617f1}{bitmap\+Carte\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structjeu}{jeu}} \mbox{\hyperlink{hearder_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structchercheur}{chercheur}} \mbox{\hyperlink{hearder_8h_adc495dd4ab2635be5e4cf4c9a3b1d737}{t\+\_\+chercheur}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} \{ \newline
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393af9379cac33a48e7d53e1728bdaec879d}{vide}} =0, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393ae71c61d4c130adcb9ad8420287b9b46a}{chercheur}} =1, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87fc6ab27cca32f9f1aefdcf93fc8083}{saboteur}} =2, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393ad99f1abe72d8211ae4eceebf3df68b01}{pepite\+Or1}} =3, 
+\newline
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3a392fac41de73ca6312fa7c05201a96}{pepite\+Or2}} =4, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3d9d60fd0245798969ba7a5746215920}{pepite\+Or3}} =5, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a27296a5965f79221952897121731d997}{entree\+Mine}} =6, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a54bd66472423014f60e3c546e84c6abf}{galerie\+T1}} =7, 
+\newline
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a4c64c2cc02c732c8e21c05828a0323a7}{galerie\+T2}} =8, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a673cb8551848e2083f67519f047856cd}{galerie\+Impasse}} =9, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a874e622921ed4fcac3e2de16c0596f44}{galerie\+Carr}} =10, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9ff85b20ac1cfd9886b46c2101185a41}{galerie\+Chemin}} =11, 
+\newline
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a765e21d0beb9051f76a97df2079bf5f7}{chario\+Rep}} =12, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3b09647184c3c448e23f99af7505bd25}{chario\+Cass}} =13, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393aafdac183886c1083b08762bf7859259d}{pioche\+Rep}} =14, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a5ab256db19a7709c1b0eed8b6c4b6166}{pioche\+Cass}} =15, 
+\newline
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a20e961b7ae1b8b184d1d6cd226667533}{lanterne\+Rep}} =16, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a445c275f0aa618b51b2302ada4f8b919}{lanterne\+Cass}} =17, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9c3a217edfa482559341d4b0fa8e4d91}{carte\+Map}} =18, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a51e08f53d5437eca0860839aa7e6237a}{outils\+Cass}} =19, 
+\newline
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a671390cf7f49a0c00938eb08ec93e89e}{lant\+Pioch\+Rep}} =20, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2c16418f96e0ebf71c18f325b5d9b1b6}{lant\+Char\+Rep}} =21, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1fc294556a8fb54d73dee1941dc3caf4}{char\+Pioch\+Rep}} =22, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393ac969b3405028a0bec1f7be13a4de9744}{eboulement}} =23, 
+\newline
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2af886c5c0b3a5aa06fc99230fcb1b5b}{mur}} =24, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87b380d36cad605a16e47c5156bbb6a4}{or\+Verso}} =25, 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1b65d492d308f4bfe4f903621c76d439}{rien}} =26, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393af9379cac33a48e7d53e1728bdaec879d}{vide}} =0, 
+\newline
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ae71c61d4c130adcb9ad8420287b9b46a}{chercheur}} =1, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87fc6ab27cca32f9f1aefdcf93fc8083}{saboteur}} =2, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ad99f1abe72d8211ae4eceebf3df68b01}{pepite\+Or1}} =3, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3a392fac41de73ca6312fa7c05201a96}{pepite\+Or2}} =4, 
+\newline
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3d9d60fd0245798969ba7a5746215920}{pepite\+Or3}} =5, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a27296a5965f79221952897121731d997}{entree\+Mine}} =6, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a54bd66472423014f60e3c546e84c6abf}{galerie\+T1}} =7, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a4c64c2cc02c732c8e21c05828a0323a7}{galerie\+T2}} =8, 
+\newline
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a673cb8551848e2083f67519f047856cd}{galerie\+Impasse}} =9, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a874e622921ed4fcac3e2de16c0596f44}{galerie\+Carr}} =10, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9ff85b20ac1cfd9886b46c2101185a41}{galerie\+Chemin}} =11, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a765e21d0beb9051f76a97df2079bf5f7}{chario\+Rep}} =12, 
+\newline
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3b09647184c3c448e23f99af7505bd25}{chario\+Cass}} =13, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393aafdac183886c1083b08762bf7859259d}{pioche\+Rep}} =14, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a5ab256db19a7709c1b0eed8b6c4b6166}{pioche\+Cass}} =15, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a20e961b7ae1b8b184d1d6cd226667533}{lanterne\+Rep}} =16, 
+\newline
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a445c275f0aa618b51b2302ada4f8b919}{lanterne\+Cass}} =17, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9c3a217edfa482559341d4b0fa8e4d91}{carte\+Map}} =18, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a51e08f53d5437eca0860839aa7e6237a}{outils\+Cass}} =19, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a671390cf7f49a0c00938eb08ec93e89e}{lant\+Pioch\+Rep}} =20, 
+\newline
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2c16418f96e0ebf71c18f325b5d9b1b6}{lant\+Char\+Rep}} =21, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1fc294556a8fb54d73dee1941dc3caf4}{char\+Pioch\+Rep}} =22, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ac969b3405028a0bec1f7be13a4de9744}{eboulement}} =23, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2af886c5c0b3a5aa06fc99230fcb1b5b}{mur}} =24, 
+\newline
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87b380d36cad605a16e47c5156bbb6a4}{or\+Verso}} =25, 
+\mbox{\hyperlink{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1b65d492d308f4bfe4f903621c76d439}{rien}} =26
+ \}
+\begin{DoxyCompactList}\small\item\em S\+T\+R\+U\+C\+T\+U\+R\+ES. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{hearder_8h_ad176ccd50c75493f21113024eea4d038}{creer\+Nb\+Joueurs}} (B\+I\+T\+M\+AP $\ast$buffer, B\+I\+T\+M\+AP $\ast$souris, B\+I\+T\+M\+AP $\ast$image)
+\begin{DoxyCompactList}\small\item\em P\+R\+O\+T\+O\+T\+Y\+P\+ES. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{hearder_8h_a527ade27a277b0f72cdc5e761501a503}{nom\+Joueurs}} (B\+I\+T\+M\+AP $\ast$buffer, int nombre\+Joueurs, B\+I\+T\+M\+AP $\ast$image)
+\item 
+void \mbox{\hyperlink{hearder_8h_a36394abb31bad756ed3a660a4fcd1a13}{menu\+Bvn}} (B\+I\+T\+M\+AP $\ast$buffer, B\+I\+T\+M\+AP $\ast$demon, F\+O\+NT $\ast$police)
+\item 
+void \mbox{\hyperlink{hearder_8h_acb1031078d3cee544d9db8c10fdaf18b}{creer\+Paquet}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+B\+I\+T\+M\+AP $\ast$ \mbox{\hyperlink{hearder_8h_a4403df88c4c3d235e7bdfe31b98172c4}{bitmap\+Pour\+Carte}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, \mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} carte)
+\item 
+B\+I\+T\+M\+AP $\ast$ \mbox{\hyperlink{hearder_8h_adbe9fdc051165ab559b34dd4b40dbdd0}{bitmap\+Pour\+Mini\+Carte}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, \mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} carte)
+\item 
+void \mbox{\hyperlink{hearder_8h_a60a4d866f5632e5facb8558b95843380}{creer\+B\+I\+T\+M\+AP}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+void \mbox{\hyperlink{hearder_8h_ab1d665c03873f297e775d04459b11747}{creer\+Defausse}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+void \mbox{\hyperlink{hearder_8h_a34519ba82ebf6f41ea1ddd453f074899}{ajout}} (\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} carte, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+void \mbox{\hyperlink{hearder_8h_ae09d6f345c66c3dd8d881baf8a44aa31}{creer\+Pioche}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} \mbox{\hyperlink{hearder_8h_ae310239fa348514ddb2d60128b9d9143}{piocher}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+int \mbox{\hyperlink{hearder_8h_a32078f43c603cf041a4ed9184eb928ad}{est\+Chemin}} (\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} tc)
+\item 
+int \mbox{\hyperlink{hearder_8h_adab17df71ea2f32c4d64f14535726bcb}{est\+Action}} (\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} tc)
+\item 
+void \mbox{\hyperlink{hearder_8h_aee34e37cc083ccc0e78cbc143bffb1a5}{creer\+Joueurs}} (char $\ast$$\ast$pseudo, int nb\+Joueur, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+void \mbox{\hyperlink{hearder_8h_a29cf73a10d769644ffedbef1bfac5c15}{creer\+Plateau}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+void \mbox{\hyperlink{hearder_8h_ae9a712204bb2bd6848613c0e531b266c}{afficher\+Or}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, B\+I\+T\+M\+AP $\ast$buffer, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+void \mbox{\hyperlink{hearder_8h_a3813728929e3992426f73ff46613ef30}{afficher\+Mine}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, B\+I\+T\+M\+AP $\ast$buffer, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+void \mbox{\hyperlink{hearder_8h_a580ac1777451aaad27702616cb18daca}{selectionner\+Carte}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+int \mbox{\hyperlink{hearder_8h_ab2c3411ba1b2c3b652308d09e951a677}{deposer\+Carte\+Chem}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+int \mbox{\hyperlink{hearder_8h_a68e7974c2494e5110d347409ff13a9f7}{deposer\+Carte\+Action}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+int \mbox{\hyperlink{hearder_8h_ada6e7dab24bb5b7f5cf2efb9f6640f79}{ajouter\+Action}} (\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} action, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int \mbox{\hyperlink{structjoueur}{joueur}})
+\item 
+int \mbox{\hyperlink{hearder_8h_a38dae0732ef46a79503c7925ad569f1e}{deposer\+Map}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+int \mbox{\hyperlink{hearder_8h_a59e80d78099f91b0330029dc32b91000}{poser\+Carte}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+int \mbox{\hyperlink{hearder_8h_afe2aa6b1413dc5c8f026b250790e4124}{drag\+And\+Drop}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, B\+I\+T\+M\+AP $\ast$souris, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+void \mbox{\hyperlink{hearder_8h_af0a63d04214f98bf32b47254e287c51b}{afficher\+Panne\+Joueurs}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+int \mbox{\hyperlink{hearder_8h_a198b4295111cbfa50e662de91223198f}{afficher\+Plateau}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, B\+I\+T\+M\+AP $\ast$souris)
+\item 
+void \mbox{\hyperlink{hearder_8h_a04c4e5758362da7fa5aa1fa4c50a7812}{creer\+Jeu}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, char $\ast$$\ast$pseudos, int nb)
+\item 
+void \mbox{\hyperlink{hearder_8h_ac61c8a4acbff0a13519f1350513e8a4a}{debut\+Partie}} (char $\ast$$\ast$pseudos, int nb, B\+I\+T\+M\+AP $\ast$souris)
+\item 
+void \mbox{\hyperlink{hearder_8h_a75d9f8c3802ebc16b95d42e5be6b60c5}{ecran\+Win\+Chercheurs}} (B\+I\+T\+M\+AP $\ast$buffer)
+\item 
+void \mbox{\hyperlink{hearder_8h_a2bb992534deccb2a4368966b555582d2}{ecran\+Win\+Saboteurs}} (B\+I\+T\+M\+AP $\ast$buffer)
+\item 
+void \mbox{\hyperlink{hearder_8h_a57152bfdbbe13a5a94f9b6f62083d130}{win\+Chercheur}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int pepite)
+\item 
+void \mbox{\hyperlink{hearder_8h_a211309cb33b34c7eab178e1ff9783b33}{win\+Saboteur}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{hearder_8h_a3de3df5e22d841accc858be9a75a9861}\label{hearder_8h_a3de3df5e22d841accc858be9a75a9861}} 
+\index{hearder.h@{hearder.h}!CHERCHEUR\_WIN1@{CHERCHEUR\_WIN1}}
+\index{CHERCHEUR\_WIN1@{CHERCHEUR\_WIN1}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{CHERCHEUR\_WIN1}{CHERCHEUR\_WIN1}}
+{\footnotesize\ttfamily \#define C\+H\+E\+R\+C\+H\+E\+U\+R\+\_\+\+W\+I\+N1~3}
+
+\mbox{\Hypertarget{hearder_8h_a17ad0271b3c352e3e6181b14a95275c7}\label{hearder_8h_a17ad0271b3c352e3e6181b14a95275c7}} 
+\index{hearder.h@{hearder.h}!CHERCHEUR\_WIN2@{CHERCHEUR\_WIN2}}
+\index{CHERCHEUR\_WIN2@{CHERCHEUR\_WIN2}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{CHERCHEUR\_WIN2}{CHERCHEUR\_WIN2}}
+{\footnotesize\ttfamily \#define C\+H\+E\+R\+C\+H\+E\+U\+R\+\_\+\+W\+I\+N2~4}
+
+\mbox{\Hypertarget{hearder_8h_a36a33a6b4026d1027747e3329e911b9a}\label{hearder_8h_a36a33a6b4026d1027747e3329e911b9a}} 
+\index{hearder.h@{hearder.h}!CHERCHEUR\_WIN3@{CHERCHEUR\_WIN3}}
+\index{CHERCHEUR\_WIN3@{CHERCHEUR\_WIN3}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{CHERCHEUR\_WIN3}{CHERCHEUR\_WIN3}}
+{\footnotesize\ttfamily \#define C\+H\+E\+R\+C\+H\+E\+U\+R\+\_\+\+W\+I\+N3~5}
+
+\mbox{\Hypertarget{hearder_8h_a0fc39317ea8cd646ad27e9b8a3baeb65}\label{hearder_8h_a0fc39317ea8cd646ad27e9b8a3baeb65}} 
+\index{hearder.h@{hearder.h}!FINTOUR@{FINTOUR}}
+\index{FINTOUR@{FINTOUR}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{FINTOUR}{FINTOUR}}
+{\footnotesize\ttfamily \#define F\+I\+N\+T\+O\+UR~1}
+
+\mbox{\Hypertarget{hearder_8h_aed89bd71aee8be823e8a20ec4e093c1e}\label{hearder_8h_aed89bd71aee8be823e8a20ec4e093c1e}} 
+\index{hearder.h@{hearder.h}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily \#define H\+E\+I\+G\+HT~800}
+
+\mbox{\Hypertarget{hearder_8h_abfc67b7c2f48108fa012704b551ebaf4}\label{hearder_8h_abfc67b7c2f48108fa012704b551ebaf4}} 
+\index{hearder.h@{hearder.h}!NBIM@{NBIM}}
+\index{NBIM@{NBIM}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{NBIM}{NBIM}}
+{\footnotesize\ttfamily \#define N\+B\+IM~26}
+
+\mbox{\Hypertarget{hearder_8h_ad315013ae6029fdddc926e3e4167db5d}\label{hearder_8h_ad315013ae6029fdddc926e3e4167db5d}} 
+\index{hearder.h@{hearder.h}!PIOCHER@{PIOCHER}}
+\index{PIOCHER@{PIOCHER}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{PIOCHER}{PIOCHER}}
+{\footnotesize\ttfamily \#define P\+I\+O\+C\+H\+ER~2}
+
+\mbox{\Hypertarget{hearder_8h_a28451d116a25a09ca07c8fbf7a773668}\label{hearder_8h_a28451d116a25a09ca07c8fbf7a773668}} 
+\index{hearder.h@{hearder.h}!SABOTEUR\_WIN@{SABOTEUR\_WIN}}
+\index{SABOTEUR\_WIN@{SABOTEUR\_WIN}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{SABOTEUR\_WIN}{SABOTEUR\_WIN}}
+{\footnotesize\ttfamily \#define S\+A\+B\+O\+T\+E\+U\+R\+\_\+\+W\+IN~-\/1}
+
+\mbox{\Hypertarget{hearder_8h_a241aeeb764887ae5e3de58b98f04b16d}\label{hearder_8h_a241aeeb764887ae5e3de58b98f04b16d}} 
+\index{hearder.h@{hearder.h}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily \#define W\+I\+D\+TH~800}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{hearder_8h_a181159d918148214345654707ac617f1}\label{hearder_8h_a181159d918148214345654707ac617f1}} 
+\index{hearder.h@{hearder.h}!bitmapCarte\_t@{bitmapCarte\_t}}
+\index{bitmapCarte\_t@{bitmapCarte\_t}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{bitmapCarte\_t}{bitmapCarte\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structbitmap_carte}{bitmap\+Carte}} \mbox{\hyperlink{header_8h_a181159d918148214345654707ac617f1}{bitmap\+Carte\+\_\+t}}}
+
+\mbox{\Hypertarget{hearder_8h_a06d122d191feb3f643333dd4098c756a}\label{hearder_8h_a06d122d191feb3f643333dd4098c756a}} 
+\index{hearder.h@{hearder.h}!jeu\_t@{jeu\_t}}
+\index{jeu\_t@{jeu\_t}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{jeu\_t}{jeu\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structjeu}{jeu}} \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}}}
+
+\mbox{\Hypertarget{hearder_8h_a19e1fe8cca015084cc5d40daf64813c0}\label{hearder_8h_a19e1fe8cca015084cc5d40daf64813c0}} 
+\index{hearder.h@{hearder.h}!joueur\_t@{joueur\_t}}
+\index{joueur\_t@{joueur\_t}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{joueur\_t}{joueur\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structjoueur}{joueur}} \mbox{\hyperlink{header_8h_a19e1fe8cca015084cc5d40daf64813c0}{joueur\+\_\+t}}}
+
+\mbox{\Hypertarget{hearder_8h_a407a681d9a08644602b7600f44cf2b43}\label{hearder_8h_a407a681d9a08644602b7600f44cf2b43}} 
+\index{hearder.h@{hearder.h}!paquetCarte\_t@{paquetCarte\_t}}
+\index{paquetCarte\_t@{paquetCarte\_t}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{paquetCarte\_t}{paquetCarte\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpaquet_carte}{paquet\+Carte}} \mbox{\hyperlink{header_8h_a407a681d9a08644602b7600f44cf2b43}{paquet\+Carte\+\_\+t}}}
+
+\mbox{\Hypertarget{hearder_8h_afd9d18de428357be6d7dfff26b288a73}\label{hearder_8h_afd9d18de428357be6d7dfff26b288a73}} 
+\index{hearder.h@{hearder.h}!pile\_t@{pile\_t}}
+\index{pile\_t@{pile\_t}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{pile\_t}{pile\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpile}{pile}} \mbox{\hyperlink{header_8h_afd9d18de428357be6d7dfff26b288a73}{pile\+\_\+t}}}
+
+\mbox{\Hypertarget{hearder_8h_adc495dd4ab2635be5e4cf4c9a3b1d737}\label{hearder_8h_adc495dd4ab2635be5e4cf4c9a3b1d737}} 
+\index{hearder.h@{hearder.h}!t\_chercheur@{t\_chercheur}}
+\index{t\_chercheur@{t\_chercheur}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{t\_chercheur}{t\_chercheur}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structchercheur}{chercheur}} \mbox{\hyperlink{header_8h_adc495dd4ab2635be5e4cf4c9a3b1d737}{t\+\_\+chercheur}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393}} 
+\index{hearder.h@{hearder.h}!typeCarte@{typeCarte}}
+\index{typeCarte@{typeCarte}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{typeCarte}{typeCarte}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}}}
+
+
+
+S\+T\+R\+U\+C\+T\+U\+R\+ES. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vide@{vide}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!vide@{vide}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393af9379cac33a48e7d53e1728bdaec879d}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393af9379cac33a48e7d53e1728bdaec879d}} 
+vide&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{chercheur@{chercheur}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!chercheur@{chercheur}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ae71c61d4c130adcb9ad8420287b9b46a}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ae71c61d4c130adcb9ad8420287b9b46a}} 
+chercheur&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{saboteur@{saboteur}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!saboteur@{saboteur}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87fc6ab27cca32f9f1aefdcf93fc8083}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87fc6ab27cca32f9f1aefdcf93fc8083}} 
+saboteur&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pepiteOr1@{pepiteOr1}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!pepiteOr1@{pepiteOr1}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ad99f1abe72d8211ae4eceebf3df68b01}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ad99f1abe72d8211ae4eceebf3df68b01}} 
+pepite\+Or1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pepiteOr2@{pepiteOr2}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!pepiteOr2@{pepiteOr2}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3a392fac41de73ca6312fa7c05201a96}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3a392fac41de73ca6312fa7c05201a96}} 
+pepite\+Or2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pepiteOr3@{pepiteOr3}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!pepiteOr3@{pepiteOr3}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3d9d60fd0245798969ba7a5746215920}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3d9d60fd0245798969ba7a5746215920}} 
+pepite\+Or3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{entreeMine@{entreeMine}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!entreeMine@{entreeMine}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a27296a5965f79221952897121731d997}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a27296a5965f79221952897121731d997}} 
+entree\+Mine&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieT1@{galerieT1}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieT1@{galerieT1}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a54bd66472423014f60e3c546e84c6abf}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a54bd66472423014f60e3c546e84c6abf}} 
+galerie\+T1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieT2@{galerieT2}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieT2@{galerieT2}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a4c64c2cc02c732c8e21c05828a0323a7}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a4c64c2cc02c732c8e21c05828a0323a7}} 
+galerie\+T2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieImpasse@{galerieImpasse}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieImpasse@{galerieImpasse}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a673cb8551848e2083f67519f047856cd}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a673cb8551848e2083f67519f047856cd}} 
+galerie\+Impasse&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieCarr@{galerieCarr}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieCarr@{galerieCarr}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a874e622921ed4fcac3e2de16c0596f44}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a874e622921ed4fcac3e2de16c0596f44}} 
+galerie\+Carr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieChemin@{galerieChemin}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieChemin@{galerieChemin}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9ff85b20ac1cfd9886b46c2101185a41}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9ff85b20ac1cfd9886b46c2101185a41}} 
+galerie\+Chemin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{charioRep@{charioRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!charioRep@{charioRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a765e21d0beb9051f76a97df2079bf5f7}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a765e21d0beb9051f76a97df2079bf5f7}} 
+chario\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{charioCass@{charioCass}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!charioCass@{charioCass}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3b09647184c3c448e23f99af7505bd25}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3b09647184c3c448e23f99af7505bd25}} 
+chario\+Cass&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{piocheRep@{piocheRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!piocheRep@{piocheRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393aafdac183886c1083b08762bf7859259d}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393aafdac183886c1083b08762bf7859259d}} 
+pioche\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{piocheCass@{piocheCass}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!piocheCass@{piocheCass}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a5ab256db19a7709c1b0eed8b6c4b6166}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a5ab256db19a7709c1b0eed8b6c4b6166}} 
+pioche\+Cass&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lanterneRep@{lanterneRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!lanterneRep@{lanterneRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a20e961b7ae1b8b184d1d6cd226667533}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a20e961b7ae1b8b184d1d6cd226667533}} 
+lanterne\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lanterneCass@{lanterneCass}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!lanterneCass@{lanterneCass}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a445c275f0aa618b51b2302ada4f8b919}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a445c275f0aa618b51b2302ada4f8b919}} 
+lanterne\+Cass&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{carteMap@{carteMap}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!carteMap@{carteMap}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9c3a217edfa482559341d4b0fa8e4d91}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9c3a217edfa482559341d4b0fa8e4d91}} 
+carte\+Map&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{outilsCass@{outilsCass}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!outilsCass@{outilsCass}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a51e08f53d5437eca0860839aa7e6237a}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a51e08f53d5437eca0860839aa7e6237a}} 
+outils\+Cass&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lantPiochRep@{lantPiochRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!lantPiochRep@{lantPiochRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a671390cf7f49a0c00938eb08ec93e89e}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a671390cf7f49a0c00938eb08ec93e89e}} 
+lant\+Pioch\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lantCharRep@{lantCharRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!lantCharRep@{lantCharRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2c16418f96e0ebf71c18f325b5d9b1b6}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2c16418f96e0ebf71c18f325b5d9b1b6}} 
+lant\+Char\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{charPiochRep@{charPiochRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!charPiochRep@{charPiochRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1fc294556a8fb54d73dee1941dc3caf4}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1fc294556a8fb54d73dee1941dc3caf4}} 
+char\+Pioch\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eboulement@{eboulement}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!eboulement@{eboulement}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ac969b3405028a0bec1f7be13a4de9744}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ac969b3405028a0bec1f7be13a4de9744}} 
+eboulement&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mur@{mur}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!mur@{mur}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2af886c5c0b3a5aa06fc99230fcb1b5b}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2af886c5c0b3a5aa06fc99230fcb1b5b}} 
+mur&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{orVerso@{orVerso}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!orVerso@{orVerso}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87b380d36cad605a16e47c5156bbb6a4}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87b380d36cad605a16e47c5156bbb6a4}} 
+or\+Verso&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{rien@{rien}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!rien@{rien}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1b65d492d308f4bfe4f903621c76d439}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1b65d492d308f4bfe4f903621c76d439}} 
+rien&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vide@{vide}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!vide@{vide}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393af9379cac33a48e7d53e1728bdaec879d}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393af9379cac33a48e7d53e1728bdaec879d}} 
+vide&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{chercheur@{chercheur}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!chercheur@{chercheur}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ae71c61d4c130adcb9ad8420287b9b46a}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ae71c61d4c130adcb9ad8420287b9b46a}} 
+chercheur&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{saboteur@{saboteur}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!saboteur@{saboteur}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87fc6ab27cca32f9f1aefdcf93fc8083}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87fc6ab27cca32f9f1aefdcf93fc8083}} 
+saboteur&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pepiteOr1@{pepiteOr1}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!pepiteOr1@{pepiteOr1}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ad99f1abe72d8211ae4eceebf3df68b01}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ad99f1abe72d8211ae4eceebf3df68b01}} 
+pepite\+Or1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pepiteOr2@{pepiteOr2}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!pepiteOr2@{pepiteOr2}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3a392fac41de73ca6312fa7c05201a96}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3a392fac41de73ca6312fa7c05201a96}} 
+pepite\+Or2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{pepiteOr3@{pepiteOr3}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!pepiteOr3@{pepiteOr3}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3d9d60fd0245798969ba7a5746215920}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3d9d60fd0245798969ba7a5746215920}} 
+pepite\+Or3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{entreeMine@{entreeMine}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!entreeMine@{entreeMine}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a27296a5965f79221952897121731d997}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a27296a5965f79221952897121731d997}} 
+entree\+Mine&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieT1@{galerieT1}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieT1@{galerieT1}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a54bd66472423014f60e3c546e84c6abf}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a54bd66472423014f60e3c546e84c6abf}} 
+galerie\+T1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieT2@{galerieT2}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieT2@{galerieT2}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a4c64c2cc02c732c8e21c05828a0323a7}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a4c64c2cc02c732c8e21c05828a0323a7}} 
+galerie\+T2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieImpasse@{galerieImpasse}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieImpasse@{galerieImpasse}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a673cb8551848e2083f67519f047856cd}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a673cb8551848e2083f67519f047856cd}} 
+galerie\+Impasse&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieCarr@{galerieCarr}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieCarr@{galerieCarr}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a874e622921ed4fcac3e2de16c0596f44}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a874e622921ed4fcac3e2de16c0596f44}} 
+galerie\+Carr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{galerieChemin@{galerieChemin}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!galerieChemin@{galerieChemin}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9ff85b20ac1cfd9886b46c2101185a41}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9ff85b20ac1cfd9886b46c2101185a41}} 
+galerie\+Chemin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{charioRep@{charioRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!charioRep@{charioRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a765e21d0beb9051f76a97df2079bf5f7}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a765e21d0beb9051f76a97df2079bf5f7}} 
+chario\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{charioCass@{charioCass}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!charioCass@{charioCass}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3b09647184c3c448e23f99af7505bd25}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a3b09647184c3c448e23f99af7505bd25}} 
+chario\+Cass&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{piocheRep@{piocheRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!piocheRep@{piocheRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393aafdac183886c1083b08762bf7859259d}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393aafdac183886c1083b08762bf7859259d}} 
+pioche\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{piocheCass@{piocheCass}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!piocheCass@{piocheCass}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a5ab256db19a7709c1b0eed8b6c4b6166}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a5ab256db19a7709c1b0eed8b6c4b6166}} 
+pioche\+Cass&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lanterneRep@{lanterneRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!lanterneRep@{lanterneRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a20e961b7ae1b8b184d1d6cd226667533}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a20e961b7ae1b8b184d1d6cd226667533}} 
+lanterne\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lanterneCass@{lanterneCass}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!lanterneCass@{lanterneCass}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a445c275f0aa618b51b2302ada4f8b919}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a445c275f0aa618b51b2302ada4f8b919}} 
+lanterne\+Cass&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{carteMap@{carteMap}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!carteMap@{carteMap}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9c3a217edfa482559341d4b0fa8e4d91}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a9c3a217edfa482559341d4b0fa8e4d91}} 
+carte\+Map&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{outilsCass@{outilsCass}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!outilsCass@{outilsCass}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a51e08f53d5437eca0860839aa7e6237a}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a51e08f53d5437eca0860839aa7e6237a}} 
+outils\+Cass&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lantPiochRep@{lantPiochRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!lantPiochRep@{lantPiochRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a671390cf7f49a0c00938eb08ec93e89e}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a671390cf7f49a0c00938eb08ec93e89e}} 
+lant\+Pioch\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lantCharRep@{lantCharRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!lantCharRep@{lantCharRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2c16418f96e0ebf71c18f325b5d9b1b6}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2c16418f96e0ebf71c18f325b5d9b1b6}} 
+lant\+Char\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{charPiochRep@{charPiochRep}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!charPiochRep@{charPiochRep}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1fc294556a8fb54d73dee1941dc3caf4}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1fc294556a8fb54d73dee1941dc3caf4}} 
+char\+Pioch\+Rep&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eboulement@{eboulement}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!eboulement@{eboulement}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ac969b3405028a0bec1f7be13a4de9744}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393ac969b3405028a0bec1f7be13a4de9744}} 
+eboulement&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mur@{mur}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!mur@{mur}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2af886c5c0b3a5aa06fc99230fcb1b5b}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a2af886c5c0b3a5aa06fc99230fcb1b5b}} 
+mur&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{orVerso@{orVerso}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!orVerso@{orVerso}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87b380d36cad605a16e47c5156bbb6a4}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a87b380d36cad605a16e47c5156bbb6a4}} 
+or\+Verso&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{rien@{rien}!hearder.h@{hearder.h}}\index{hearder.h@{hearder.h}!rien@{rien}}}\mbox{\Hypertarget{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1b65d492d308f4bfe4f903621c76d439}\label{hearder_8h_a73269d7ce2d1acd3c0a5fa63b5155393a1b65d492d308f4bfe4f903621c76d439}} 
+rien&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{hearder_8h_a3813728929e3992426f73ff46613ef30}\label{hearder_8h_a3813728929e3992426f73ff46613ef30}} 
+\index{hearder.h@{hearder.h}!afficherMine@{afficherMine}}
+\index{afficherMine@{afficherMine}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{afficherMine()}{afficherMine()}}
+{\footnotesize\ttfamily void afficher\+Mine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{hearder_8h_a3813728929e3992426f73ff46613ef30_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a3813728929e3992426f73ff46613ef30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_ae9a712204bb2bd6848613c0e531b266c}\label{hearder_8h_ae9a712204bb2bd6848613c0e531b266c}} 
+\index{hearder.h@{hearder.h}!afficherOr@{afficherOr}}
+\index{afficherOr@{afficherOr}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{afficherOr()}{afficherOr()}}
+{\footnotesize\ttfamily void afficher\+Or (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{hearder_8h_ae9a712204bb2bd6848613c0e531b266c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_ae9a712204bb2bd6848613c0e531b266c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_af0a63d04214f98bf32b47254e287c51b}\label{hearder_8h_af0a63d04214f98bf32b47254e287c51b}} 
+\index{hearder.h@{hearder.h}!afficherPanneJoueurs@{afficherPanneJoueurs}}
+\index{afficherPanneJoueurs@{afficherPanneJoueurs}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{afficherPanneJoueurs()}{afficherPanneJoueurs()}}
+{\footnotesize\ttfamily void afficher\+Panne\+Joueurs (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{hearder_8h_af0a63d04214f98bf32b47254e287c51b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_af0a63d04214f98bf32b47254e287c51b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a198b4295111cbfa50e662de91223198f}\label{hearder_8h_a198b4295111cbfa50e662de91223198f}} 
+\index{hearder.h@{hearder.h}!afficherPlateau@{afficherPlateau}}
+\index{afficherPlateau@{afficherPlateau}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{afficherPlateau()}{afficherPlateau()}}
+{\footnotesize\ttfamily int afficher\+Plateau (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{B\+I\+T\+M\+AP $\ast$}]{souris }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a198b4295111cbfa50e662de91223198f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a34519ba82ebf6f41ea1ddd453f074899}\label{hearder_8h_a34519ba82ebf6f41ea1ddd453f074899}} 
+\index{hearder.h@{hearder.h}!ajout@{ajout}}
+\index{ajout@{ajout}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{ajout()}{ajout()}}
+{\footnotesize\ttfamily void ajout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}}}]{carte,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a34519ba82ebf6f41ea1ddd453f074899_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_ada6e7dab24bb5b7f5cf2efb9f6640f79}\label{hearder_8h_ada6e7dab24bb5b7f5cf2efb9f6640f79}} 
+\index{hearder.h@{hearder.h}!ajouterAction@{ajouterAction}}
+\index{ajouterAction@{ajouterAction}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{ajouterAction()}{ajouterAction()}}
+{\footnotesize\ttfamily int ajouter\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}}}]{action,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{joueur }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_ada6e7dab24bb5b7f5cf2efb9f6640f79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a4403df88c4c3d235e7bdfe31b98172c4}\label{hearder_8h_a4403df88c4c3d235e7bdfe31b98172c4}} 
+\index{hearder.h@{hearder.h}!bitmapPourCarte@{bitmapPourCarte}}
+\index{bitmapPourCarte@{bitmapPourCarte}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{bitmapPourCarte()}{bitmapPourCarte()}}
+{\footnotesize\ttfamily B\+I\+T\+M\+AP$\ast$ bitmap\+Pour\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}}}]{carte }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_adbe9fdc051165ab559b34dd4b40dbdd0}\label{hearder_8h_adbe9fdc051165ab559b34dd4b40dbdd0}} 
+\index{hearder.h@{hearder.h}!bitmapPourMiniCarte@{bitmapPourMiniCarte}}
+\index{bitmapPourMiniCarte@{bitmapPourMiniCarte}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{bitmapPourMiniCarte()}{bitmapPourMiniCarte()}}
+{\footnotesize\ttfamily B\+I\+T\+M\+AP$\ast$ bitmap\+Pour\+Mini\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}}}]{carte }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_a60a4d866f5632e5facb8558b95843380}\label{hearder_8h_a60a4d866f5632e5facb8558b95843380}} 
+\index{hearder.h@{hearder.h}!creerBITMAP@{creerBITMAP}}
+\index{creerBITMAP@{creerBITMAP}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{creerBITMAP()}{creerBITMAP()}}
+{\footnotesize\ttfamily void creer\+B\+I\+T\+M\+AP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_ab1d665c03873f297e775d04459b11747}\label{hearder_8h_ab1d665c03873f297e775d04459b11747}} 
+\index{hearder.h@{hearder.h}!creerDefausse@{creerDefausse}}
+\index{creerDefausse@{creerDefausse}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{creerDefausse()}{creerDefausse()}}
+{\footnotesize\ttfamily void creer\+Defausse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_a04c4e5758362da7fa5aa1fa4c50a7812}\label{hearder_8h_a04c4e5758362da7fa5aa1fa4c50a7812}} 
+\index{hearder.h@{hearder.h}!creerJeu@{creerJeu}}
+\index{creerJeu@{creerJeu}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{creerJeu()}{creerJeu()}}
+{\footnotesize\ttfamily void creer\+Jeu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{char $\ast$$\ast$}]{pseudos,  }\item[{int}]{nb }\end{DoxyParamCaption})}
+
+I\+N\+I\+T\+I\+A\+L\+I\+S\+A\+T\+I\+ON DE LA P\+A\+R\+T\+IEHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{hearder_8h_a04c4e5758362da7fa5aa1fa4c50a7812_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a04c4e5758362da7fa5aa1fa4c50a7812_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_aee34e37cc083ccc0e78cbc143bffb1a5}\label{hearder_8h_aee34e37cc083ccc0e78cbc143bffb1a5}} 
+\index{hearder.h@{hearder.h}!creerJoueurs@{creerJoueurs}}
+\index{creerJoueurs@{creerJoueurs}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{creerJoueurs()}{creerJoueurs()}}
+{\footnotesize\ttfamily void creer\+Joueurs (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{pseudo,  }\item[{int}]{nb\+Joueur,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{hearder_8h_aee34e37cc083ccc0e78cbc143bffb1a5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_ad176ccd50c75493f21113024eea4d038}\label{hearder_8h_ad176ccd50c75493f21113024eea4d038}} 
+\index{hearder.h@{hearder.h}!creerNbJoueurs@{creerNbJoueurs}}
+\index{creerNbJoueurs@{creerNbJoueurs}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{creerNbJoueurs()}{creerNbJoueurs()}}
+{\footnotesize\ttfamily int creer\+Nb\+Joueurs (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{B\+I\+T\+M\+AP $\ast$}]{souris,  }\item[{B\+I\+T\+M\+AP $\ast$}]{image }\end{DoxyParamCaption})}
+
+
+
+P\+R\+O\+T\+O\+T\+Y\+P\+ES. 
+
+\mbox{\Hypertarget{hearder_8h_acb1031078d3cee544d9db8c10fdaf18b}\label{hearder_8h_acb1031078d3cee544d9db8c10fdaf18b}} 
+\index{hearder.h@{hearder.h}!creerPaquet@{creerPaquet}}
+\index{creerPaquet@{creerPaquet}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{creerPaquet()}{creerPaquet()}}
+{\footnotesize\ttfamily void creer\+Paquet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_acb1031078d3cee544d9db8c10fdaf18b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_ae09d6f345c66c3dd8d881baf8a44aa31}\label{hearder_8h_ae09d6f345c66c3dd8d881baf8a44aa31}} 
+\index{hearder.h@{hearder.h}!creerPioche@{creerPioche}}
+\index{creerPioche@{creerPioche}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{creerPioche()}{creerPioche()}}
+{\footnotesize\ttfamily void creer\+Pioche (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{hearder_8h_ae09d6f345c66c3dd8d881baf8a44aa31_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a29cf73a10d769644ffedbef1bfac5c15}\label{hearder_8h_a29cf73a10d769644ffedbef1bfac5c15}} 
+\index{hearder.h@{hearder.h}!creerPlateau@{creerPlateau}}
+\index{creerPlateau@{creerPlateau}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{creerPlateau()}{creerPlateau()}}
+{\footnotesize\ttfamily void creer\+Plateau (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_ac61c8a4acbff0a13519f1350513e8a4a}\label{hearder_8h_ac61c8a4acbff0a13519f1350513e8a4a}} 
+\index{hearder.h@{hearder.h}!debutPartie@{debutPartie}}
+\index{debutPartie@{debutPartie}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{debutPartie()}{debutPartie()}}
+{\footnotesize\ttfamily void debut\+Partie (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{pseudos,  }\item[{int}]{nb,  }\item[{B\+I\+T\+M\+AP $\ast$}]{souris }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_ac61c8a4acbff0a13519f1350513e8a4a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a68e7974c2494e5110d347409ff13a9f7}\label{hearder_8h_a68e7974c2494e5110d347409ff13a9f7}} 
+\index{hearder.h@{hearder.h}!deposerCarteAction@{deposerCarteAction}}
+\index{deposerCarteAction@{deposerCarteAction}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{deposerCarteAction()}{deposerCarteAction()}}
+{\footnotesize\ttfamily int deposer\+Carte\+Action (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{hearder_8h_a68e7974c2494e5110d347409ff13a9f7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a68e7974c2494e5110d347409ff13a9f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_ab2c3411ba1b2c3b652308d09e951a677}\label{hearder_8h_ab2c3411ba1b2c3b652308d09e951a677}} 
+\index{hearder.h@{hearder.h}!deposerCarteChem@{deposerCarteChem}}
+\index{deposerCarteChem@{deposerCarteChem}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{deposerCarteChem()}{deposerCarteChem()}}
+{\footnotesize\ttfamily int deposer\+Carte\+Chem (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{hearder_8h_ab2c3411ba1b2c3b652308d09e951a677_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_ab2c3411ba1b2c3b652308d09e951a677_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a38dae0732ef46a79503c7925ad569f1e}\label{hearder_8h_a38dae0732ef46a79503c7925ad569f1e}} 
+\index{hearder.h@{hearder.h}!deposerMap@{deposerMap}}
+\index{deposerMap@{deposerMap}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{deposerMap()}{deposerMap()}}
+{\footnotesize\ttfamily int deposer\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a38dae0732ef46a79503c7925ad569f1e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_afe2aa6b1413dc5c8f026b250790e4124}\label{hearder_8h_afe2aa6b1413dc5c8f026b250790e4124}} 
+\index{hearder.h@{hearder.h}!dragAndDrop@{dragAndDrop}}
+\index{dragAndDrop@{dragAndDrop}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{dragAndDrop()}{dragAndDrop()}}
+{\footnotesize\ttfamily int drag\+And\+Drop (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{B\+I\+T\+M\+AP $\ast$}]{souris,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_afe2aa6b1413dc5c8f026b250790e4124_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_afe2aa6b1413dc5c8f026b250790e4124_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a75d9f8c3802ebc16b95d42e5be6b60c5}\label{hearder_8h_a75d9f8c3802ebc16b95d42e5be6b60c5}} 
+\index{hearder.h@{hearder.h}!ecranWinChercheurs@{ecranWinChercheurs}}
+\index{ecranWinChercheurs@{ecranWinChercheurs}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{ecranWinChercheurs()}{ecranWinChercheurs()}}
+{\footnotesize\ttfamily void ecran\+Win\+Chercheurs (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+les 10 lignes suivantes ont été réalisées avec l\textquotesingle{}aide de Lancelot De MontfortHere is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a75d9f8c3802ebc16b95d42e5be6b60c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a2bb992534deccb2a4368966b555582d2}\label{hearder_8h_a2bb992534deccb2a4368966b555582d2}} 
+\index{hearder.h@{hearder.h}!ecranWinSaboteurs@{ecranWinSaboteurs}}
+\index{ecranWinSaboteurs@{ecranWinSaboteurs}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{ecranWinSaboteurs()}{ecranWinSaboteurs()}}
+{\footnotesize\ttfamily void ecran\+Win\+Saboteurs (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a2bb992534deccb2a4368966b555582d2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a2bb992534deccb2a4368966b555582d2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_adab17df71ea2f32c4d64f14535726bcb}\label{hearder_8h_adab17df71ea2f32c4d64f14535726bcb}} 
+\index{hearder.h@{hearder.h}!estAction@{estAction}}
+\index{estAction@{estAction}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{estAction()}{estAction()}}
+{\footnotesize\ttfamily int est\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}}}]{tc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_a32078f43c603cf041a4ed9184eb928ad}\label{hearder_8h_a32078f43c603cf041a4ed9184eb928ad}} 
+\index{hearder.h@{hearder.h}!estChemin@{estChemin}}
+\index{estChemin@{estChemin}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{estChemin()}{estChemin()}}
+{\footnotesize\ttfamily int est\+Chemin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}}}]{tc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_a36394abb31bad756ed3a660a4fcd1a13}\label{hearder_8h_a36394abb31bad756ed3a660a4fcd1a13}} 
+\index{hearder.h@{hearder.h}!menuBvn@{menuBvn}}
+\index{menuBvn@{menuBvn}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{menuBvn()}{menuBvn()}}
+{\footnotesize\ttfamily void menu\+Bvn (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{B\+I\+T\+M\+AP $\ast$}]{demon,  }\item[{F\+O\+NT $\ast$}]{police }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_a527ade27a277b0f72cdc5e761501a503}\label{hearder_8h_a527ade27a277b0f72cdc5e761501a503}} 
+\index{hearder.h@{hearder.h}!nomJoueurs@{nomJoueurs}}
+\index{nomJoueurs@{nomJoueurs}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{nomJoueurs()}{nomJoueurs()}}
+{\footnotesize\ttfamily char$\ast$ nom\+Joueurs (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{int}]{nombre\+Joueurs,  }\item[{B\+I\+T\+M\+AP $\ast$}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_ae310239fa348514ddb2d60128b9d9143}\label{hearder_8h_ae310239fa348514ddb2d60128b9d9143}} 
+\index{hearder.h@{hearder.h}!piocher@{piocher}}
+\index{piocher@{piocher}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{piocher()}{piocher()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} piocher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hearder_8h_a59e80d78099f91b0330029dc32b91000}\label{hearder_8h_a59e80d78099f91b0330029dc32b91000}} 
+\index{hearder.h@{hearder.h}!poserCarte@{poserCarte}}
+\index{poserCarte@{poserCarte}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{poserCarte()}{poserCarte()}}
+{\footnotesize\ttfamily int poser\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a59e80d78099f91b0330029dc32b91000_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a580ac1777451aaad27702616cb18daca}\label{hearder_8h_a580ac1777451aaad27702616cb18daca}} 
+\index{hearder.h@{hearder.h}!selectionnerCarte@{selectionnerCarte}}
+\index{selectionnerCarte@{selectionnerCarte}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{selectionnerCarte()}{selectionnerCarte()}}
+{\footnotesize\ttfamily void selectionner\+Carte (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a580ac1777451aaad27702616cb18daca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a57152bfdbbe13a5a94f9b6f62083d130}\label{hearder_8h_a57152bfdbbe13a5a94f9b6f62083d130}} 
+\index{hearder.h@{hearder.h}!winChercheur@{winChercheur}}
+\index{winChercheur@{winChercheur}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{winChercheur()}{winChercheur()}}
+{\footnotesize\ttfamily void win\+Chercheur (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{pepite }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a57152bfdbbe13a5a94f9b6f62083d130_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a57152bfdbbe13a5a94f9b6f62083d130_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{hearder_8h_a211309cb33b34c7eab178e1ff9783b33}\label{hearder_8h_a211309cb33b34c7eab178e1ff9783b33}} 
+\index{hearder.h@{hearder.h}!winSaboteur@{winSaboteur}}
+\index{winSaboteur@{winSaboteur}!hearder.h@{hearder.h}}
+\doxysubsubsection{\texorpdfstring{winSaboteur()}{winSaboteur()}}
+{\footnotesize\ttfamily void win\+Saboteur (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a211309cb33b34c7eab178e1ff9783b33_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hearder_8h_a211309cb33b34c7eab178e1ff9783b33_icgraph}
+\end{center}
+\end{figure}

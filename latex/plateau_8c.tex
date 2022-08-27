@@ -1,0 +1,345 @@
+\hypertarget{plateau_8c}{}\doxysection{plateau.\+c File Reference}
+\label{plateau_8c}\index{plateau.c@{plateau.c}}
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+Include dependency graph for plateau.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{plateau_8c_a29cf73a10d769644ffedbef1bfac5c15}{creer\+Plateau}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+void \mbox{\hyperlink{plateau_8c_ae9a712204bb2bd6848613c0e531b266c}{afficher\+Or}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, B\+I\+T\+M\+AP $\ast$buffer, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+void \mbox{\hyperlink{plateau_8c_a3813728929e3992426f73ff46613ef30}{afficher\+Mine}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, B\+I\+T\+M\+AP $\ast$buffer, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+void \mbox{\hyperlink{plateau_8c_a580ac1777451aaad27702616cb18daca}{selectionner\+Carte}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+int \mbox{\hyperlink{plateau_8c_a5a4061342301dc35937213a18222d3c2}{verifier\+Tunnel}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+int \mbox{\hyperlink{plateau_8c_a2942dc87b1829af0e3bd0b774bc67ebf}{verifier\+Tunnel2}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int x, int y, int depart)
+\item 
+int \mbox{\hyperlink{plateau_8c_aa34b2c7cd470f95af786370e675ece3b}{verifier\+Chemin}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int x, int y)
+\item 
+int \mbox{\hyperlink{plateau_8c_ab2c3411ba1b2c3b652308d09e951a677}{deposer\+Carte\+Chem}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+int \mbox{\hyperlink{plateau_8c_a68e7974c2494e5110d347409ff13a9f7}{deposer\+Carte\+Action}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+int \mbox{\hyperlink{plateau_8c_ada6e7dab24bb5b7f5cf2efb9f6640f79}{ajouter\+Action}} (\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}} action, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int \mbox{\hyperlink{structjoueur}{joueur}})
+\item 
+int \mbox{\hyperlink{plateau_8c_a38dae0732ef46a79503c7925ad569f1e}{deposer\+Map}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+int \mbox{\hyperlink{plateau_8c_ae87bf417b8d2d318170b176663637740}{deposer\+Defausse}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+int \mbox{\hyperlink{plateau_8c_a59e80d78099f91b0330029dc32b91000}{poser\+Carte}} (\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+int \mbox{\hyperlink{plateau_8c_afe2aa6b1413dc5c8f026b250790e4124}{drag\+And\+Drop}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, B\+I\+T\+M\+AP $\ast$souris, int taille\+\_\+x, int taille\+\_\+y)
+\item 
+void \mbox{\hyperlink{plateau_8c_af0a63d04214f98bf32b47254e287c51b}{afficher\+Panne\+Joueurs}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}})
+\item 
+int \mbox{\hyperlink{plateau_8c_a198b4295111cbfa50e662de91223198f}{afficher\+Plateau}} (B\+I\+T\+M\+AP $\ast$buffer, \mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$\mbox{\hyperlink{structjeu}{jeu}}, B\+I\+T\+M\+AP $\ast$souris)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{plateau_8c_a3813728929e3992426f73ff46613ef30}\label{plateau_8c_a3813728929e3992426f73ff46613ef30}} 
+\index{plateau.c@{plateau.c}!afficherMine@{afficherMine}}
+\index{afficherMine@{afficherMine}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{afficherMine()}{afficherMine()}}
+{\footnotesize\ttfamily void afficher\+Mine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{plateau_8c_a3813728929e3992426f73ff46613ef30_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a3813728929e3992426f73ff46613ef30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_ae9a712204bb2bd6848613c0e531b266c}\label{plateau_8c_ae9a712204bb2bd6848613c0e531b266c}} 
+\index{plateau.c@{plateau.c}!afficherOr@{afficherOr}}
+\index{afficherOr@{afficherOr}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{afficherOr()}{afficherOr()}}
+{\footnotesize\ttfamily void afficher\+Or (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{plateau_8c_ae9a712204bb2bd6848613c0e531b266c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_ae9a712204bb2bd6848613c0e531b266c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_af0a63d04214f98bf32b47254e287c51b}\label{plateau_8c_af0a63d04214f98bf32b47254e287c51b}} 
+\index{plateau.c@{plateau.c}!afficherPanneJoueurs@{afficherPanneJoueurs}}
+\index{afficherPanneJoueurs@{afficherPanneJoueurs}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{afficherPanneJoueurs()}{afficherPanneJoueurs()}}
+{\footnotesize\ttfamily void afficher\+Panne\+Joueurs (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{plateau_8c_af0a63d04214f98bf32b47254e287c51b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_af0a63d04214f98bf32b47254e287c51b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_a198b4295111cbfa50e662de91223198f}\label{plateau_8c_a198b4295111cbfa50e662de91223198f}} 
+\index{plateau.c@{plateau.c}!afficherPlateau@{afficherPlateau}}
+\index{afficherPlateau@{afficherPlateau}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{afficherPlateau()}{afficherPlateau()}}
+{\footnotesize\ttfamily int afficher\+Plateau (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{B\+I\+T\+M\+AP $\ast$}]{souris }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a198b4295111cbfa50e662de91223198f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a198b4295111cbfa50e662de91223198f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_ada6e7dab24bb5b7f5cf2efb9f6640f79}\label{plateau_8c_ada6e7dab24bb5b7f5cf2efb9f6640f79}} 
+\index{plateau.c@{plateau.c}!ajouterAction@{ajouterAction}}
+\index{ajouterAction@{ajouterAction}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{ajouterAction()}{ajouterAction()}}
+{\footnotesize\ttfamily int ajouter\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a73269d7ce2d1acd3c0a5fa63b5155393}{type\+Carte}}}]{action,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{joueur }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_ada6e7dab24bb5b7f5cf2efb9f6640f79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_a29cf73a10d769644ffedbef1bfac5c15}\label{plateau_8c_a29cf73a10d769644ffedbef1bfac5c15}} 
+\index{plateau.c@{plateau.c}!creerPlateau@{creerPlateau}}
+\index{creerPlateau@{creerPlateau}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{creerPlateau()}{creerPlateau()}}
+{\footnotesize\ttfamily void creer\+Plateau (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a29cf73a10d769644ffedbef1bfac5c15_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_a68e7974c2494e5110d347409ff13a9f7}\label{plateau_8c_a68e7974c2494e5110d347409ff13a9f7}} 
+\index{plateau.c@{plateau.c}!deposerCarteAction@{deposerCarteAction}}
+\index{deposerCarteAction@{deposerCarteAction}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{deposerCarteAction()}{deposerCarteAction()}}
+{\footnotesize\ttfamily int deposer\+Carte\+Action (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{plateau_8c_a68e7974c2494e5110d347409ff13a9f7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a68e7974c2494e5110d347409ff13a9f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_ab2c3411ba1b2c3b652308d09e951a677}\label{plateau_8c_ab2c3411ba1b2c3b652308d09e951a677}} 
+\index{plateau.c@{plateau.c}!deposerCarteChem@{deposerCarteChem}}
+\index{deposerCarteChem@{deposerCarteChem}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{deposerCarteChem()}{deposerCarteChem()}}
+{\footnotesize\ttfamily int deposer\+Carte\+Chem (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{plateau_8c_ab2c3411ba1b2c3b652308d09e951a677_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_ab2c3411ba1b2c3b652308d09e951a677_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_ae87bf417b8d2d318170b176663637740}\label{plateau_8c_ae87bf417b8d2d318170b176663637740}} 
+\index{plateau.c@{plateau.c}!deposerDefausse@{deposerDefausse}}
+\index{deposerDefausse@{deposerDefausse}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{deposerDefausse()}{deposerDefausse()}}
+{\footnotesize\ttfamily int deposer\+Defausse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{plateau_8c_ae87bf417b8d2d318170b176663637740_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_ae87bf417b8d2d318170b176663637740_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_a38dae0732ef46a79503c7925ad569f1e}\label{plateau_8c_a38dae0732ef46a79503c7925ad569f1e}} 
+\index{plateau.c@{plateau.c}!deposerMap@{deposerMap}}
+\index{deposerMap@{deposerMap}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{deposerMap()}{deposerMap()}}
+{\footnotesize\ttfamily int deposer\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a38dae0732ef46a79503c7925ad569f1e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_afe2aa6b1413dc5c8f026b250790e4124}\label{plateau_8c_afe2aa6b1413dc5c8f026b250790e4124}} 
+\index{plateau.c@{plateau.c}!dragAndDrop@{dragAndDrop}}
+\index{dragAndDrop@{dragAndDrop}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{dragAndDrop()}{dragAndDrop()}}
+{\footnotesize\ttfamily int drag\+And\+Drop (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{B\+I\+T\+M\+AP $\ast$}]{souris,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_afe2aa6b1413dc5c8f026b250790e4124_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_afe2aa6b1413dc5c8f026b250790e4124_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_a59e80d78099f91b0330029dc32b91000}\label{plateau_8c_a59e80d78099f91b0330029dc32b91000}} 
+\index{plateau.c@{plateau.c}!poserCarte@{poserCarte}}
+\index{poserCarte@{poserCarte}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{poserCarte()}{poserCarte()}}
+{\footnotesize\ttfamily int poser\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a59e80d78099f91b0330029dc32b91000_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_a580ac1777451aaad27702616cb18daca}\label{plateau_8c_a580ac1777451aaad27702616cb18daca}} 
+\index{plateau.c@{plateau.c}!selectionnerCarte@{selectionnerCarte}}
+\index{selectionnerCarte@{selectionnerCarte}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{selectionnerCarte()}{selectionnerCarte()}}
+{\footnotesize\ttfamily void selectionner\+Carte (\begin{DoxyParamCaption}\item[{B\+I\+T\+M\+AP $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{taille\+\_\+x,  }\item[{int}]{taille\+\_\+y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a580ac1777451aaad27702616cb18daca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_aa34b2c7cd470f95af786370e675ece3b}\label{plateau_8c_aa34b2c7cd470f95af786370e675ece3b}} 
+\index{plateau.c@{plateau.c}!verifierChemin@{verifierChemin}}
+\index{verifierChemin@{verifierChemin}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{verifierChemin()}{verifierChemin()}}
+{\footnotesize\ttfamily int verifier\+Chemin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_aa34b2c7cd470f95af786370e675ece3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_a5a4061342301dc35937213a18222d3c2}\label{plateau_8c_a5a4061342301dc35937213a18222d3c2}} 
+\index{plateau.c@{plateau.c}!verifierTunnel@{verifierTunnel}}
+\index{verifierTunnel@{verifierTunnel}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{verifierTunnel()}{verifierTunnel()}}
+{\footnotesize\ttfamily int verifier\+Tunnel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{plateau_8c_a5a4061342301dc35937213a18222d3c2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a5a4061342301dc35937213a18222d3c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plateau_8c_a2942dc87b1829af0e3bd0b774bc67ebf}\label{plateau_8c_a2942dc87b1829af0e3bd0b774bc67ebf}} 
+\index{plateau.c@{plateau.c}!verifierTunnel2@{verifierTunnel2}}
+\index{verifierTunnel2@{verifierTunnel2}!plateau.c@{plateau.c}}
+\doxysubsubsection{\texorpdfstring{verifierTunnel2()}{verifierTunnel2()}}
+{\footnotesize\ttfamily int verifier\+Tunnel2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{header_8h_a06d122d191feb3f643333dd4098c756a}{jeu\+\_\+t}} $\ast$}]{jeu,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{depart }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plateau_8c_a2942dc87b1829af0e3bd0b774bc67ebf_icgraph}
+\end{center}
+\end{figure}

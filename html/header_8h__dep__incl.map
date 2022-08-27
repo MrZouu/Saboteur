@@ -1,0 +1,10 @@
+<map id="header.h" name="header.h">
+<area shape="rect" id="node1" title=" " alt="" coords="277,5,349,32"/>
+<area shape="rect" id="node2" href="$ecrans_8c.html" title=" " alt="" coords="5,80,77,107"/>
+<area shape="rect" id="node3" href="$joueur_8c.html" title=" " alt="" coords="102,80,170,107"/>
+<area shape="rect" id="node4" href="$main_8c.html" title=" " alt="" coords="195,80,256,107"/>
+<area shape="rect" id="node5" href="$menu_8c.html" title=" " alt="" coords="281,80,346,107"/>
+<area shape="rect" id="node6" href="$partie_8c.html" title=" " alt="" coords="370,80,435,107"/>
+<area shape="rect" id="node7" href="$pioche_8c.html" title=" " alt="" coords="459,80,530,107"/>
+<area shape="rect" id="node8" href="$plateau_8c.html" title=" " alt="" coords="555,80,629,107"/>
+</map>

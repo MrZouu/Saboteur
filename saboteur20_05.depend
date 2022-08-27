@@ -1,0 +1,151 @@
+# depslib dependency file v1.0
+1622877654 source:c:\users\ruben\desktop\saboteur20_05\ecrans.c
+	"header.h"
+
+1622877841 c:\users\ruben\desktop\saboteur20_05\header.h
+	<allegro.h>
+	<winalleg.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<dirent.h>
+
+1622877655 source:c:\users\ruben\desktop\saboteur20_05\joueur.c
+	"header.h"
+
+1622877655 source:c:\users\ruben\desktop\saboteur20_05\main.c
+	"header.h"
+
+1622877654 source:c:\users\ruben\desktop\saboteur20_05\menu.c
+	"header.h"
+
+1622877654 source:c:\users\ruben\desktop\saboteur20_05\partie.c
+	"header.h"
+
+1622877654 source:c:\users\ruben\desktop\saboteur20_05\pioche.c
+	"header.h"
+
+1622877655 source:c:\users\ruben\desktop\saboteur20_05\plateau.c
+	"header.h"
+
+1622898078 source:c:\users\ruben\documents\saboteur20_05\main.c
+	"header.h"
+
+1622877841 c:\users\ruben\documents\saboteur20_05\header.h
+	<allegro.h>
+	<winalleg.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<dirent.h>
+
+1622877654 source:c:\users\ruben\documents\saboteur20_05\ecrans.c
+	"header.h"
+
+1622877655 source:c:\users\ruben\documents\saboteur20_05\joueur.c
+	"header.h"
+
+1622877654 source:c:\users\ruben\documents\saboteur20_05\menu.c
+	"header.h"
+
+1622877654 source:c:\users\ruben\documents\saboteur20_05\partie.c
+	"header.h"
+
+1622877654 source:c:\users\ruben\documents\saboteur20_05\pioche.c
+	"header.h"
+
+1622877655 source:c:\users\ruben\documents\saboteur20_05\plateau.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\bureau\saboteur20_05\ecrans.c
+	"header.h"
+
+1622877842 c:\users\lor3n\onedrive\bureau\saboteur20_05\header.h
+	<allegro.h>
+	<winalleg.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<dirent.h>
+
+1622877656 source:c:\users\lor3n\onedrive\bureau\saboteur20_05\joueur.c
+	"header.h"
+
+1622898080 source:c:\users\lor3n\onedrive\bureau\saboteur20_05\main.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\bureau\saboteur20_05\menu.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\bureau\saboteur20_05\partie.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\bureau\saboteur20_05\pioche.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\bureau\saboteur20_05\plateau.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\documents\codeblocks\ece\allegro\projet\saboteur\ecrans.c
+	"header.h"
+
+1622877842 c:\users\lor3n\onedrive\documents\codeblocks\ece\allegro\projet\saboteur\header.h
+	<allegro.h>
+	<winalleg.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<dirent.h>
+
+1630070014 source:c:\users\lor3n\onedrive\documents\codeblocks\ece\allegro\projet\saboteur\joueur.c
+	"header.h"
+
+1622898080 source:c:\users\lor3n\onedrive\documents\codeblocks\ece\allegro\projet\saboteur\main.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\documents\codeblocks\ece\allegro\projet\saboteur\menu.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\documents\codeblocks\ece\allegro\projet\saboteur\partie.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\documents\codeblocks\ece\allegro\projet\saboteur\pioche.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\onedrive\documents\codeblocks\ece\allegro\projet\saboteur\plateau.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\desktop\saboteur\saboteur\ecrans.c
+	"header.h"
+
+1622877842 c:\users\lor3n\desktop\saboteur\saboteur\header.h
+	<allegro.h>
+	<winalleg.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<dirent.h>
+
+1630070014 source:c:\users\lor3n\desktop\saboteur\saboteur\joueur.c
+	"header.h"
+
+1622898080 source:c:\users\lor3n\desktop\saboteur\saboteur\main.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\desktop\saboteur\saboteur\menu.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\desktop\saboteur\saboteur\partie.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\desktop\saboteur\saboteur\pioche.c
+	"header.h"
+
+1622877656 source:c:\users\lor3n\desktop\saboteur\saboteur\plateau.c
+	"header.h"
+
