@@ -19,9 +19,9 @@ the gold is shared, everyone reveals their role.
 * A compiler :
     * **[CodeBlocks](http://www.codeblocks.org/downloads/binaries/)** *(MinGW setup)*
 * Allegro:
-    * **[Allegro](https://drive.google.com/file/d/1r5xGFCGZvfuyLDCGQxyXhVgcXtYhnA3K/view)**
+    * **[Allegro](https://github.com/MrZouu/Saboteur/blob/main/allegro_4_4_3_install.zip)**
 ### Add Allegro
-* With **[allegro_4_4_3_install.zip](https://drive.google.com/file/d/1r5xGFCGZvfuyLDCGQxyXhVgcXtYhnA3K/view)**
+* With **[allegro_4_4_3_install.zip](https://github.com/MrZouu/Saboteur/blob/main/allegro_4_4_3_install.zip)**
   * Extract the .zip file to -> **\Program Files\CodeBlocks\MinGW**
   * Press "Ok"
 * In **Codeblocks**
