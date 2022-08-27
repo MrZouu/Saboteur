@@ -41,6 +41,6 @@ the gold is shared, everyone reveals their role.
   
 
 #  Credits
-* [**MrZouu**](https://github.com/MrZouu) - Lorenzo Marrocchi : Co-creator of the project.
-* Léo La Fornara : Co-creator of the project.
-* Lancelot de Montfort : Co-creator of the project.
+* [**MrZouu**](https://github.com/MrZouu) : Co-creator of the project.
+* **Léo La Fornara** : Co-creator of the project.
+* **Lancelot de Montfort** : Co-creator of the project.
