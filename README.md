@@ -33,7 +33,11 @@ the gold is shared, everyone reveals their role.
 
 # Features
 ## Main Menu
-*The menu is a graphical interface with
+* The menu is a graphical interface with
+<p>
+	<img src="https://imgur.com/xszfQP9.png" width="400">
+</p>
+
    * **Nouvelle Partie** - New Game
    * **Partie Sauvegarde** - Save (Not functional)
    * **Scores joueurs** - Score of registered players
@@ -46,6 +50,13 @@ the gold is shared, everyone reveals their role.
 * Press space when changing players
 * Drag and drop
 * Victory menu for saboteur and gold digger
+
+<p>
+	<img src="https://imgur.com/OrUdvyC.png" width="400">
+</p>
+<p>
+	<img src="https://imgur.com/QAuKcO4.png" width="400">
+</p>
 
 ##  User guide
 * Interactions with the mouse
