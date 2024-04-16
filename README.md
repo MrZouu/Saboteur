@@ -6,7 +6,7 @@ Saboteur card game with graphic interface
 
 ***Project date : 2021***
 
-##  Description
+# Description
 You are either a gold digger or a saboteur. If the gold diggers manage to find their way to the
 their way to the treasure, they will win gold nuggets
 gold nuggets and the saboteurs win nothing. But if the
@@ -16,6 +16,17 @@ the gold is shared, everyone reveals their role.
 
 ⚠️This project is the result of a common work, made for school with a deadline and I chose to leave it as it was at the time of submission
 
+<br/>
+
+# Summary
+
+* **[Summary](#summary)**
+* **[Install](#install)**
+* **[Features](#features)**
+* **[Credits](#credits)**
+
+<br/>
+
 # Install
 ### What I used
 * A compiler :
@@ -23,20 +34,21 @@ the gold is shared, everyone reveals their role.
 * Allegro:
     * **[Allegro](https://github.com/MrZouu/Saboteur/blob/main/allegro_4_4_3_install.zip)**
 ### Add Allegro
-* With **[allegro_4_4_3_install.zip](https://github.com/MrZouu/Saboteur/blob/main/allegro_4_4_3_install.zip)**
-  * Extract the .zip file to -> **\Program Files\CodeBlocks\MinGW**
+* Go to the **[Allegro file](https://github.com/MrZouu/Saboteur/blob/main/allegro_4_4_3_install.zip)**
+  * Extract the .zip file to -> **`\Program Files\CodeBlocks\MinGW`**
   * Press "Ok"
 * In **Codeblocks**
-  * Compiler -> Linker settings -> Add
+  * `Compiler -> Linker settings -> Add`
   * Click on the file icon
-  * Go to **\Program Files\CodeBlocks\MinGW\bin**
+  * Go to **`\Program Files\CodeBlocks\MinGW\bin`**
   * If the file is empty, select the "All files" option
-  * Open Alegg44.dll
+  * Open `Alegg44.dll`
 
 # Features
 ## Main Menu
-* The menu is a graphical interface with
-<p>
+
+<p align="center"><b>The menu is a graphical interface</b></p>
+<p align="center">
 	<img src="https://imgur.com/xszfQP9.png" width="400">
 </p>
 
@@ -46,6 +58,8 @@ the gold is shared, everyone reveals their role.
    * **Aide** - Game rules
    * **Quitter le jeu** - Leave
 
+<br/>
+
 ## Game
 * Choose the number of players ( 2-4 )
 * Naming players
@@ -53,10 +67,10 @@ the gold is shared, everyone reveals their role.
 * Drag and drop
 * Victory menu for saboteur and gold digger
 
-<p>
+<p align="center">
 	<img src="https://imgur.com/OrUdvyC.png" width="400">
 </p>
-<p>
+<p align="center">
 	<img src="https://imgur.com/QAuKcO4.png" width="400">
 </p>
 
@@ -65,6 +79,6 @@ the gold is shared, everyone reveals their role.
 * Use the keyboard to enter players' names
 
 #  Credits
-* [**MrZouu**](https://github.com/MrZouu) : Co-creator of the project. 
+* [**Lorenzo**](https://github.com/MrZouu) : Co-creator of the project. 
 * **Léo La Fornara** : Co-creator of the project.
 * **Lancelot de Montfort** : Co-creator of the project.
